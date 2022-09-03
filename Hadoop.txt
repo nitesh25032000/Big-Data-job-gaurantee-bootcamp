@@ -1,0 +1,144 @@
+login as: cloudera
+cloudera@192.168.56.102's password:
+Last login: Sat Sep  3 07:51:20 2022 from 192.168.56.1
+[cloudera@quickstart ~]$ history
+    1  hive
+    2  ifconfig
+    3  hadoop version
+    4  clear
+    5  ls
+    6  mkdir nit1
+    7  ls
+    8  hadoop fs -mkdir /nit1
+    9  hadoop fs -ls /
+   10  vi text3.txt
+   11  cat text3.txt
+   12  hadoop fs -put text3.txt /nit2
+   13  hadoop fs -put text3.txt /nit1
+   14  hadoop fs -ls /nit1
+   15  ls
+   16  hadoop fs -get /nit/text3.txt
+   17  rm text3.txt
+   18  ls
+   19  hadoop fs -get /nit1/text3.txt
+   20  hadoop fs -get /nit1/text3.txt /nit1
+   21  hadoop fs -chmod777 /nit1/text3.txt /nit1
+   22  hadoop fs -chmod 777 /nit1/text3.txt /nit1
+   23  hadoop fs -get /nit1/text3.txt /nit1
+   24  hadoop fs -get /nit1/text3.txt
+   25  rm text3.txt
+   26  hadoop fs -get /nit1/text3.txt
+   27  cd ..
+   28  ls
+   29  cd nitq
+   30  cd nit1
+   31  cd ..
+   32  cd home /nit1
+   33  cd nit1
+   34  ls
+   35  cd home /
+   36  cd home/
+   37  ls
+   38  cd .
+   39  cd ..
+   40  ls
+   41  cd home
+   42  ls
+   43  cd ..
+   44  cd tmp
+   45  ls
+   46  ifconfig
+   47  ls
+   48  cd nit1
+   49  ls
+   50  hadoop fs -get /nit1/text3.txt
+   51  cd ..
+   52  ls
+   53  cd nit1
+   54  ls
+   55  clear
+   56  ls
+   57  cd ..
+   58  ls
+   59  clear
+   60  ls
+   61  ls -l
+   62  mv text1.txt /nit1
+   63  hadoop fs -chmod 777 text1.txt
+   64  su
+   65  mv test1.txt /home/cloudera/nit1
+   66  pwd
+   67  cd nit1
+   68  ls
+   69  cd ..
+   70  mv text2.txt /home/cloudera/nit1
+   71  cd nit1
+   72  pwd
+   73  ls
+   74  cd ..
+   75  ls
+   76  hadoop fs -mv /test.txt /nit1
+   77  hadoop fs -ls /
+   78  hadoop fs -mv test1.txt /nit
+   79  vi test4.txt
+   80  hadoop fs -mv test4.txt /nit1
+   81  hadoop fs -ls /
+   82  ls
+   83  mv test4.txt /nit1
+   84  cd nit1
+   85  ls
+   86  cd ..
+   87  mv test4.txt /home/cloudera/nit1
+   88  ls
+   89  hadoop fs -mv text4.txt /nit1
+   90  mv test4.txt /home/cloudera/nit1
+   91  rm test4.txt
+   92  cd nit1
+   93  ls
+   94  hadoop fs -mv /test4.txt /nit1
+   95  cd nit1
+   96  ls
+   97  rm test4.txt
+   98  cd ..
+   99  mv text4.txt /home/cloudera/nit1
+  100  hadoop fs -mv /test4.txt /nit1
+  101  mv test4.txt /home/cloudera/nit1
+  102  ls
+  103  mv text3.txt /home/cloudera/nit1
+  104  cd nit1
+  105  pwd
+  106  ls
+  107  cd ..
+  108  ls
+  109  hadoop fs -mv /text3.txt /nit1
+  110  hadoop fs -ls /
+  111  hadoop fs -chmod 777 nit1
+  112  hadoop fs -mkdir nit1
+  113  hadoop fs -mv /text3.txt /nit1
+  114  vi test3.txt
+  115  cat test3.txt
+  116  ls
+  117  mv test3.txt /home/cloudera/nit1
+  118  cd nit1
+  119  ls
+  120  cd ..
+  121  ls
+  122  hadoop fs -mv /test3.txt /nit1
+  123  clear
+  124  ls
+  125  ls -l
+  126  mv test.txt /home/cloudera/nit1
+  127  cd nit1
+  128  ls
+  129  pwd
+  130  cd ..
+  131  ls
+  132  ls -l
+  133  hadoop fs -mv /test.txt /nit1
+  134  hadoop fs -ls /
+  135  hadoop fs -mv /test1.txt /nit1
+  136  haoop fs -ls /nit1
+  137  hadoop fs -ls /nit1
+  138  hive
+  139  history
+[cloudera@quickstart ~]$
