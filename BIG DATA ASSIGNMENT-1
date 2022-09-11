@@ -1,0 +1,7 @@
+1.downloaded the data sales_order_data.csv from github
+2.Using file zilla transfered the file to the local directory 
+/home/cloudera/tmp/hive_class
+then transfered the file from local 
+hadoop fs -mkdir /tmp/assign1
+hadoop fs -put /tmp/hive_class/sales_order_data.csv /home/cloudera/tmp/assign1
+
