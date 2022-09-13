@@ -1,0 +1,55 @@
+Practice set-1
+
+creating a internal table in hive
+create table day_wise
+(Dates date,
+confirmed int,
+deaths int,
+recovered int,
+active int,
+new_cases int,
+new_deaths int,
+new_recovered int,
+deaths_per_case float,
+recovered_per_case float,
+deaths_or_recovered float,
+countries int)
+row format delimited
+fields terminated by ',';
+-- loading data from local
+load data local inpath 'file:///home/cloudera/tmp/pract1/day_wise.csv' into table day_wise;
+
+--set header property to view the header
+set hive.cli.print.header = true;
+
+-- set table property to remove null value from first line
+alter table day_wise set tblproperties ("skip.header.line.count"="1");
+
+select * from day_wise;-- to view the contents of the table
+
+describe day_wise; --to view the structure of the table
+
+describe formatted day_wise; -- to view the detailed structure of the table
+
+--loading data from hdfs
+load data inpath '/tmp/pract1' into table day_wise;
+
+-- creating external table
+create external table day_external
+(Dates date,
+confirmed int,
+deaths int,
+recovered int,
+active int,
+new_cases int,
+new_deaths int,
+new_recovered int,
+deaths_per_case float,
+recovered_per_case float,
+deaths_or_recovered float,
+countries int)
+row format delimited
+fields terminated by ','
+location '/tmp/pract1';
+
+--note before giving the hdfs path for external table check whether data is available in the hdfs location
